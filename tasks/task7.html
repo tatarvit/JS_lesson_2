@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<h1>задача №7</h1>
+	<p>
+		. З клавіатури вводяться вартість товару та кількість одиниць 3 товарів.
+		Обчислити вартість кожного товару окремо та загальну вартість. Вивести
+		чек (як у супермаркеті) використовуючи елементи розмітки.
+	</p>
+	<script>
+		// Вводимо необхідні дані
+		let priceOfProduct = parseInt(prompt('введіть ціну першого товару', '0'))
+		let quantityOfProduct = parseInt(prompt('введіть кількість першого товару', '0'))
+		let priceOfProduct1 = parseInt(prompt('введіть ціну другого товару', '0'))
+		let quantityOfProduct1 = parseInt(prompt('введіть кількість другого товару', '0'))
+		let priceOfProduct2 = parseInt(prompt('введіть ціну третьог товару', '0'))
+		let quantityOfProduct2 = parseInt(prompt('введіть кількість третього товару', '0'))
+
+		// Знаходимо результат виразів
+		let amountForProduct = priceOfProduct * quantityOfProduct
+		let amountForProduct1 = priceOfProduct1 * quantityOfProduct1
+		let amountForProduct2 = priceOfProduct2 * quantityOfProduct2
+		let amountForProducts = amountForProduct + amountForProduct1 + amountForProduct2
+
+		// Виводимо значення виразів
+		document.write(`
+		<h4>товарний чек</h4>
+		<table>
+		<tr>
+			<td>товар№1</td>
+			<td>-----${quantityOfProduct}--</td>
+			<td>-----${priceOfProduct}</td>
+		</tr>
+		<tr>
+			<td>--------------</td>
+			<td>--------</td>
+			<td>-----${amountForProduct}</td>
+		</tr>
+		<tr>
+			<td>товар№2</td>
+			<td>-----${quantityOfProduct1}--</td>
+			<td>-----${priceOfProduct1}</td>
+		</tr>
+		<tr>
+			<td>--------------</td>
+			<td>--------</td>
+			<td>-----${amountForProduct1}</td>
+		</tr>
+		<tr>
+			<td>товар№3</td>
+			<td>-----${quantityOfProduct2}--</td>
+			<td>-----${priceOfProduct2}</td>
+		</tr>
+		<tr>
+			<td>-------------</td>
+			<td>--------</td>
+			<td>-----${amountForProduct2}</td>
+		</tr>
+		<tr>
+			<td>Разом--------</td>
+			<td>--------</td>
+			<td>-----${amountForProducts}</td>
+		</tr>
+	</table>
+
+		`)
+
+
+	</script>
+</body>
+
+</html>

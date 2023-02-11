@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<h1>задача №3</h1>
+	<p>
+		Дано рік народження (дата: 1 січня) та поточний рік. Знайти кількість років.
+	</p>
+
+	<script>
+		// Вводимо необхідні дані
+
+		let yearOfBirth = parseInt(prompt('введіть рік народження ', '0'))
+		//let yearOfbirth = 1975
+		let todayDate = new Date()
+		let currentYear = todayDate.getFullYear()
+
+
+		// Знаходимо результат виразів
+		let numberOfYears = currentYear - yearOfBirth
+
+		// Виводимо значення виразів
+		document.write(`кількість років ${numberOfYears}`)
+
+	</script>
+
+
+</body>
+
+</html>

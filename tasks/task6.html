@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<h1>задача №6</h1>
+	<p>
+		Дано кількість секунд, що пройшла від початку доби. Визначити скільки це годин і хвилин.
+	</p>
+
+	<script>
+		// Вводимо необхідні дані
+		let seconds = parseInt(prompt('введіть секунди', '0'))
+		const secInHour = 3600
+		const secInMinute = 60
+		const minuteInHour = 60
+
+		// ОБЧИСЛЕННЯ
+
+		let hour
+		let minute
+
+		// визначення годин
+		hour = parseInt(seconds / secInHour)
+
+		// визначення хвилин
+		let minute1
+		minute1 = parseInt(seconds / secInMinute)
+		minute = minute1 - hour * minuteInHour
+
+		// Виводимо значення виразів
+		document.write(`
+		години ${hour} <br>
+		хвилин ${minute} 
+		`)
+
+	</script>
+
+</body>
+
+</html>

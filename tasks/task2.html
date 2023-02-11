@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<h1>задача №2</h1>
+	<p>
+		Знайти суму, добуток та частку двох дійсних чисел. Результат вивести у формі таблиці
+	</p>
+	<script>
+		// Вводимо необхідні дані
+		let a = parseInt(prompt('введіть a', '0'))
+		let b = parseInt(prompt('введіть b', '0'))
+
+		// Знаходимо результат виразів
+		let sum = a + b
+		let multiplc = a * b
+		let divisn = a / b
+
+		// Виводимо значення виразів
+		document.write(`
+		<table border="2px">
+		<tr>
+			<th>№</th>
+			<th>Матиматична дія</th>
+			<th>Отримане значення</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>додавання</td>
+			<td>${sum}</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>добуток</td>
+			<td>${multiplc}</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>частка</td>
+			<td>${divisn}</td>
+		</tr>
+	</table>
+		`)
+
+
+	</script>
+
+</body>
+
+</html>
